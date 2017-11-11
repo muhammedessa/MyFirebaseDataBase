@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/firstnameText"
+        android:layout_width="97dp"
+        android:layout_height="104dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="16dp"
+        android:text="TextView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/lastnametext"
+        android:layout_width="113dp"
+        android:layout_height="32dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="16dp"
+        android:text="TextView"
+        app:layout_constraintStart_toEndOf="@+id/firstnameText"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/addresstext"
+        android:layout_width="126dp"
+        android:layout_height="32dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="4dp"
+        android:text="TextView"
+        app:layout_constraintStart_toEndOf="@+id/firstnameText"
+        app:layout_constraintTop_toBottomOf="@+id/lastnametext" />
+
+    <Button
+        android:id="@+id/update"
+        android:layout_width="78dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="16dp"
+        android:text="Update"
+        app:layout_constraintStart_toEndOf="@+id/lastnametext"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/delete"
+        android:layout_width="77dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="8dp"
+        android:text="Delete"
+        app:layout_constraintStart_toEndOf="@+id/addresstext"
+        app:layout_constraintTop_toBottomOf="@+id/update" />
+
+    <TextView
+        android:id="@+id/depttext"
+        android:layout_width="155dp"
+        android:layout_height="31dp"
+        android:layout_marginTop="4dp"
+        android:text="TextView"
+        app:layout_constraintStart_toEndOf="@+id/firstnameText"
+        app:layout_constraintTop_toBottomOf="@+id/addresstext" />
+</android.support.constraint.ConstraintLayout>
